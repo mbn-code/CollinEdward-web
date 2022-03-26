@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- navbar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            
+        </ul>
+    </nav>
+    
+    <style>
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            border-radius: 10px;
+
+        }
+        
+        nav li {
+            float: left;
+        }
+        
+        nav li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        nav li a:hover {
+            background-color: #111;
+        }
+
+        button {
+            background-color: #4c6faf;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 10%;
+            border-radius: 10px;
+        }
+
+        body {
+            background-color: #7183a4;
+        }
+        </style>
+
+<!-- Make a button with id prompt -->
+    <div>
+        <button id="prompt">Search google</button>
+        <!-- Make a button with id twitter_prompt-->
+        <button id="twitter_prompt">Search twitter</button>
+        <!-- Make a button with id youtube_prompt-->
+        <button id="youtube_prompt">Search youtube</button>
+        <!-- Make a button with id github_prompt-->
+        <button id="github_prompt">Search github</button>
+        <!-- Make a button with id instagram_prompt-->
+        <button id="instagram_prompt">Search instagram</button>
+        <!-- Make a button with id linkedin_prompt-->
+        <button id="linkedin_prompt">Search linkedin</button>
+        <!-- Make a button with id pinterest_prompt-->
+        <button id="pinterest_prompt">Search pinterest</button>
+        <!-- Make a button with id search_all_prompt -->
+        <button id="search_all_prompt">Search all websites</button>
+
+    </div>
+
+    <div>
+        <!-- Button for searching up ip address -->
+        <button id="ip_address">Search ip address</button>
+        <!-- Button for searching up names in database -->
+        <button id="names">Search names</button>
+        <!-- Button for searching up phone number country code -->
+        <button id="phone_number">Search phone number</button>
+        <!-- Button for searching up email address -->
+        <button id="email">Search email address</button>
+        <!-- Button for searching up credit card number -->
+        <button id="credit_card">Search credit card</button>
+    </div>
+
+    <script>
+        
+        
+        
+        // Check if button with id prompt is clicked
+        document.getElementById('prompt').addEventListener('click', function(){
+            
+            function main() {
+                var input = prompt("Enter a search term: ");
+                var url = "https://www.google.com/search?q=" + input;
+                window.open(url);
+                
+                document.getElementById('prompt').innerHTML = input;
+                
+            }
+            main();
+        });
+        
+        // Chec if button with id twitter_prompt is clicked
+        document.getElementById('twitter_prompt').addEventListener('click', function(){
+            
+            function main() {
+                var input = prompt("Enter a search term: ");
+                var url = "https://twitter.com/search?q=" + input;
+                window.open(url);
+                
+                document.getElementById('twitter_prompt').innerHTML = input;
+                
+            }
+            main();
+        });
+        
+        // Chec if button with id youtube_prompt is clicked
+        document.getElementById('youtube_prompt').addEventListener('click', function(){
+            
+            function main() {
+                var input = prompt("Enter a search term: ");
+                var url = "https://www.youtube.com/results?search_query=" + input;
+                window.open(url);
+                
+                document.getElementById('youtube_prompt').innerHTML = input;
+                
+            }
+            main();
+        });
+        // Chec if button with id github_prompt is clicked
+        document.getElementById('github_prompt').addEventListener('click', function(){
+            
+            function main() {
+                var input = prompt("Enter a search term: ");
+                var url = "github.com/search?q=" + input;
+                window.open(url);
+                
+                document.getElementById('github_prompt').innerHTML = input;
+            }
+            main();
+        });
+        // Chec if button with id instagram_prompt is clicked
+        document.getElementById('instagram_prompt').addEventListener('click', function(){
+            
+            function main() {
+                var input = prompt("Enter a search term: ");
+                var url = "https://www.instagram.com/explore/tags/" + input;
+                window.open(url);
+                
+                document.getElementById('instagram_prompt').innerHTML = input;
+            }
+            main();
+        });
+        // Chec if button with id linkedin_prompt is clicked
+        document.getElementById('linkedin_prompt').addEventListener('click', function(){
+            
+            function main() {
+                var input = prompt("Enter a search term: ");
+                var url = "https://www.linkedin.com/search/results/index/?keywords=" + input;
+                window.open(url);
+                
+                document.getElementById('linkedin_prompt').innerHTML = input;
+            }
+            main();
+        });
+        // Chec if button with id pinterest_prompt is clicked
+        document.getElementById('pinterest_prompt').addEventListener('click', function(){
+            
+            function main() {
+                var input = prompt("Enter a search term: ");
+                var url = "https://www.pinterest.com/search/pins/?q=" + input;
+                window.open(url);
+                
+                document.getElementById('pinterest_prompt').innerHTML = input;
+            }
+            main();
+        });
+        
+        // Check if the button with id ip_address is clicked
+        document.getElementById('ip_address').addEventListener('click', function(){
+            
+            function main() {
+                var input = prompt("Enter an ip address: ");
+                var url = "https://www.ip-adress.com/ip_tracer/'" + input + "'";
+                window.open(url);
+                
+                document.getElementById('ip_address').innerHTML = input;
+            }
+            main();
+        });
+
+        // Check if the button with id names is clicked
+        document.getElementById('names').addEventListener('click', function(){
+            
+            function main() {
+                var input = prompt("Enter a name: ");
+                var url = "https://www.google.com/search?q='" + input + "'";
+                window.open(url);
+                
+                document.getElementById('names').innerHTML = input;
+            }
+            main();
+        });
+        // Check if the button with id phone_number is clicked
+        document.getElementById('phone_number').addEventListener('click', function(){
+            
+            function main() {
+                var input = prompt("Enter a phone number: ");
+                var url = "https://www.google.com/search?q='" + input + "'";
+                window.open(url);
+                
+                document.getElementById('phone_number').innerHTML = input;
+            }
+            main();
+        });
+        // Check if the button with id email is clicked
+        document.getElementById('email').addEventListener('click', function(){
+            
+            function main() {
+                var input = prompt("Enter an email address: ");
+                var url = "https://www.google.com/search?q='" + input + "'";
+                window.open(url);
+                
+                document.getElementById('email').innerHTML = input;
+            }
+            main();
+        });
+        // Check if the button with id credit_card is clicked
+        document.getElementById('credit_card').addEventListener('click', function(){
+            
+            function main() {
+                var input = prompt("Enter a credit card number: ");
+                var url = "https://www.google.com/search?q='" + input + "'";
+                window.open(url);
+                
+                document.getElementById('credit_card').innerHTML = input;
+            }
+            main();
+        });
+
+        // check if the button with id search_all_prompt is clicked
+        document.getElementById('search_all_prompt').addEventListener('click', function(){
+            
+            function main() {
+                var input = prompt("Enter a search term: ");
+                // Search google, twitter, youtube, github, instagram, linkedin, pinterest
+                window.open("https://twitter.com/search?q=" + input);
+                window.open("https://www.youtube.com/results?search_query=" + input);
+                window.open("https://www.instagram.com/explore/tags/" + input);
+                window.open("https://www.linkedin.com/search/results/index/?keywords=" + input);
+                window.open("https://www.pinterest.com/search/pins/?q=" + input);
+                window.open("https://www.github.com/search?q=" + input);
+                
+                document.getElementById('search_all_prompt').innerHTML = input;
+            
+                window.open(url);
+                
+                document.getElementById('search_all_prompt').innerHTML = input;
+            }
+            main();
+        }); 
+        </script>
+
+</body>
+</html>

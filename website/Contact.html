@@ -26,8 +26,7 @@
                 <i class="fas fa-map-marker-alt"></i>
                 <span>Address:</span>
                 <span>Latitude: 26.03002, Longitude: 119.05395</span>
-                <span>City: Ocean</span>
-                <span>Country: Ocean</span>
+                <span>City: Minhou County, Fuzhou, Fujian, China</span>
             </p>
             <p>
                 <i class="fas fa-phone-alt"></i>
@@ -47,21 +46,16 @@
         <div class="contact-info-right">
             <h3>Social Media</h3>
             <p>
-                <i class="fab fa-facebook-square"></i>
-                <span>Facebook</span>
-            </p>
-            <p>
                 <i class="fab fa-twitter-square"></i>
-                <span href="https://twitter.com/cstanleye">Twitter: https://twitter.com/cstanleye</span>
+                <!-- Make the twitter link clickable -->
+                <span>
+                    <a href="https://twitter.com/cstanleye">Twitter</a>
+                </span>
             </p>
             <p>
-                <i class="fab fa-instagram"></i>
-                <span>Instagram</span>
-            </p>
         </div>
     </div>
 
-        
         
     <style>
         .programming_image {
@@ -125,7 +119,37 @@
             width: 100%;
         }
 
+        /*style p nice */
+        p {
+            color: #333;
+            text-align: center;
+            font-size: 20px;
+            margin-top: 50px;
+            /* add a text color to the text */
+            background: rgb(160, 160, 160);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /*style the contact info */
+        .contact-info {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            width: 80%;
+            height: auto;
+            background-color: #333;
+            /*Make rounded cornors for navbar*/
+            border-radius: 10px;
+            /* center the box */
+            margin: 50px auto;
+
+        }
+        
+
     </style>
+
 
 </body>
 </html>
